@@ -1,0 +1,571 @@
+@charset "UTF-8";
+/* CSS Document*/
+/*Este código es estandar para Mobile*/
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#contenedor{
+	width: 100%;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	background: #000;
+}
+#btn-menu{
+	display: none;
+}
+header label{
+	display: none;
+	width: 38px;
+	height: 38px;
+	padding: 10px;
+	border-right: 1px solid #FFF;
+}
+header label:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+.menu li{
+	border-right: 1px solid #FFF;
+}
+.menu li:hover{
+	background: #CCC;
+}
+.menu ul li a{
+	display: block;
+	padding: 10px 20px;
+	color: #FFF;
+	text-decoration: none;
+}
+#bloques{
+	width: 100%;
+	margin: 0 auto;
+}
+#imagenPrincipal{background-image: url(img/porfile.png);}
+
+#contenidoA{
+	width: 100%;
+	margin: 0 auto;
+}
+#perfil{
+	background-image: url("img/perfil.png");
+}
+#contenidoB{
+	width: 100%;
+	margin: 0 auto;
+}
+#lapiz{	
+	background-image: url("img/lapiz.png");
+}
+#pc{	
+	background-image: url("img/pc.png");
+}
+#game{	
+	background-image: url("img/game.png");
+}
+#contenidoC{
+	width: 100%;
+	margin: 0 auto;
+}
+#contenidoD{
+	width: 100%;
+	margin: 0 auto;
+}
+#contenidoE{
+	width: 100%;
+	margin: 0 auto;
+}
+#correo{
+	background-image: url("img/correo.png");
+}
+#contenidoF{
+	width: 100%;
+	margin: 0 auto;
+}
+#under{
+	width: 100%;
+	margin: 0 auto;
+}
+#face{
+	background-image: url("img/facebook.png");
+}
+#be{
+	background-image: url("img/behance.png");
+}
+#in{
+	background-image: url("img/instagram.png");
+}
+#you{
+	background-image: url("img/you.png");
+}
+
+
+/*Inician las @mediaqueries para encapsular por resolución de pantalla*/
+/*Mobile*/
+
+@media screen and (min-width: 0px) and (max-width: 480px){
+#contenedor{
+	background-color: #000;
+}
+header{
+	position: fixed;
+	z-index: 14;
+}
+#ed img{
+	width: 23px;
+	height: 28px;
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 90%;
+}
+header label{
+		display: block;
+	}
+.menu {
+	position: absolute;
+	background: #000;
+	width: 30%;
+	margin-left: -30%;
+	transition: all 0.5s;
+}
+.menu ul{
+	flex-direction: column;
+	}
+.menu li{
+	border-top: 1px solid white;
+}
+#btn-menu:checked ~ .menu{
+	margin: 0;
+}
+#bloques{
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	top: 9%;
+	z-index: 7;
+}
+#imagenPrincipal{
+	width: 90%;
+	padding: 90% 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 0 auto
+	margin-top: 20%;
+	margin-left: 0%;
+}
+#contenidoA{
+	height: 100%;
+	background-color: #f3f6f5;
+	position: absolute;
+	top: 109%;
+	z-index: 8;
+}
+#tituloA{
+	font-family: "Gotham Narrow Black", Gotham;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 2.5em;
+	position: absolute;
+	top: 10%;
+	left: 1%;
+}
+#parrafoA{
+	font-family: Gotham;
+	position: absolute;
+	top: 17%;
+	left: 1%;
+}
+#perfil{
+	width: 90%;
+	padding: 90% 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: 50%;
+	margin-left: 6%;
+}
+#contenidoB{
+	height: 100%;
+	background-color: #fae98d;
+	position: absolute;
+	top: 209%;
+	z-index: 9;
+}
+#lapiz{
+	width: 10%;
+	padding: 50% 0;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: 26%;
+	margin-left: 23%;
+}
+#tituloExperiencia{
+	font-family: "Gotham Narrow Black", Gotham;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 150%;
+	position: absolute;
+	margin-top: 25%;
+	margin-left: 30%;
+}
+#parrafoE{
+	font-family: Gotham;
+	text-align: justify;
+	font-size: 15px;
+	position: absolute;
+	margin-top: 35%;
+	margin-left: 30%;
+}
+#pc{
+	width: 10%;
+	padding: 50% 0;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: 72%;
+	margin-left: 23%;
+}
+#tituloSoftware{
+	font-family: "Gotham Narrow Black", Gotham;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 150%;
+	position: absolute;
+	margin-top: 71%;
+	margin-left: 30%;
+}
+#parrafoS{
+	font-family: Gotham;
+	text-align: justify;
+	font-size: 15px;
+	position: absolute;
+	margin-top: 80%;
+	margin-left: 30%;
+}
+#game{
+	width: 10%;
+	padding: 50% 0;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: 116%;
+	margin-left: 23%;
+}
+#tituloHobbies{
+	font-family: "Gotham Narrow Black", Gotham;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 150%;
+	position: absolute;
+	margin-top: 115%;
+	margin-left: 30%;
+}
+#parrafoH{
+	font-family: Gotham;
+	text-align: justify;
+	font-size: 15px;
+	position: absolute;
+	margin-top: 125%;
+	margin-left: 30%;
+}
+#contenidoC{
+	height: 100%;
+	background-color: #fae98d;
+	position: absolute;
+	top: 409%;
+	z-index: 10;
+}
+#works{
+	width: 100%;
+	margin-top: 18%;
+
+}
+div.slider{
+	width: 100%;
+	margin: auto ;
+	overflow: hidden;
+}
+div.slider ul{
+	padding: 0;
+	width: 1000%;
+	display: flex;
+	animation: cambio 20s infinite;
+	animation-direction: alternate;
+}
+div.slider li{
+	width: 100%;
+	list-style: none;
+}
+div.slider img{
+	width: 100%;
+}
+@keyframes cambio{
+	0%{margin-left: 0;}
+	10%{margin-left: 0;}
+
+	10%{margin-left: -100%;}
+	20%{margin-left: -100%;}
+
+	20%{margin-left: -200%;}
+	30%{margin-left: -200%;}
+
+	30%{margin-left: -300%;}
+	40%{margin-left: -300%;}
+
+	40%{margin-left: -400%;}
+	50%{margin-left: -400%;}
+
+	50%{margin-left: -500%;}
+	60%{margin-left: -500%;}
+
+	60%{margin-left: -600%;}
+	70%{margin-left: -600%;}
+
+	70%{margin-left: -700%;}
+	80%{margin-left: -700%;}
+
+	80%{margin-left: -800%;}
+	90%{margin-left: -800%;}
+
+	90%{margin-left: -900%;}
+	100%{margin-left: -900%;}
+}
+#contenidoD{
+	height: 100%;
+	background-color: #f3f6f5;
+	position: absolute;
+	top: 309%;
+	z-index: 11;
+}
+#tituloB{
+	font-family: "Gotham Narrow Black", Gotham;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 2.5em;
+	position: absolute;
+	top: 10%;
+	left: 1%;
+}
+#parrafoB{
+	font-family: Gotham;
+	position: absolute;
+	top: 120px;
+	left: 10px;
+}
+@font-face {
+    font-family: 'askanaregular';
+    src: url('tipografia/askana-webfont.woff2') format('woff2'),
+         url('tipografiaaskana-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+	#ilustración{
+		color: #7a7869;
+		font-family: 'askanaregular';
+		font-size: 250%;
+		position: absolute;
+		margin-top: 35%;
+		margin-left: 10%;
+	}
+	#diseñoWeb{
+		font-family: 'askanaregular';
+		font-size: 250%;
+		position: absolute;
+		margin-top: 53%;
+		margin-left: 45%;
+	}
+	#fotografia{
+		color: #7a7869;
+		font-family: 'askanaregular';
+		font-size: 250%;
+		position: absolute;
+		margin-top: 70%;
+		margin-left: 12%;
+	}
+	#branding{
+		font-family: 'askanaregular';
+		font-size: 250%;
+		position: absolute;
+		margin-top: 87%;
+		margin-left: 50%;
+	}
+	#infografía{
+		font-family: 'askanaregular';
+		font-size: 250%;
+		position: absolute;
+		margin-top: 100%;
+		margin-left: 12%;
+	}
+	#photoshop{
+		color: #7a7869;
+		font-family: 'askanaregular';
+		font-size: 250%;
+		position: absolute;
+		margin-top: 115%;
+		margin-left: 53%;
+	}
+#play{
+	margin: 10%;
+	position: absolute;
+	top: 83%;
+	left: 8%;
+}
+#contenidoE{
+		height: 100%;
+		background-color: #f3f6f5;
+		position: absolute;
+		top: 509%;
+		z-index: 12;
+}
+#tituloC{
+	font-family: "Gotham Narrow Black", Gotham;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 2.5em;
+	position: absolute;
+	top: 10%;
+	left: 1%;
+}
+#correo{
+	width: 40%;
+	padding: 90% 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: 30%;
+	margin-left: 25%;
+}
+#datosC{
+	font-family: Gotham;
+	font-weight: bold;
+	font-size: 1em;
+	position: absolute;
+	top: 87%;
+	left: 1%;
+}
+#contenidoF{
+		height: 100%;
+		background-color: #fae98d;
+		position: absolute;
+		top: 609%;
+		z-index: 13;
+}
+#parrafoC{
+	font-family: Gotham;
+	position: absolute;
+	top: 12%;
+	left: 1%;
+}
+#nom{
+	font-family: Gotham;
+	font-weight: bold;
+	font-size: 40px;
+	position: absolute;
+	top: 30%;
+	left: 15%;
+}
+#em{
+	font-family: Gotham;
+	font-weight: bold;
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+}
+#me{
+	font-family: Gotham;
+	font-weight: bold;
+	font-size: 40px;
+	position: absolute;
+	top: 70%;
+	left: 15%;
+}
+#en{
+	width: 60%;
+	height: 20%;
+	background-image: url("img/btnEnviar.png");
+	background-repeat: no-repeat;
+	background-size: 40% 20%;
+	position: absolute;
+	top: 90%;
+	left: 40%;
+	z-index: 20;
+}
+#en:hover{
+	background-image: url("img/btnEnviar-hover.png");
+	background-size: 40% 20%;
+}
+#under{
+	height: 10%;
+	background-color: black;
+	position: absolute;
+	top: 709%;
+	z-index: 14;
+}
+#face{
+	width: 8%;
+	height: 50%;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	position: absolute;
+	top: 25%;
+	left: 38%;
+	z-index: 1;
+}
+#be{
+	width: 10%;
+	height: 50%;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	position: absolute;
+	top: 27%;
+	left: 45%;
+	z-index: 1;
+}
+#in{
+	width: 10%;
+	height: 30%;
+	background-repeat: no-repeat;
+	background-size: 40%;
+	position: absolute;
+	top: 25%;
+	left: 53%;
+	z-index: 1;
+}
+#you{
+	width: 10%;
+	height: 40%;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	position: absolute;
+	top: 25%;
+	left: 60%;
+	z-index: 1;
+}
+#pieDepagina{
+	color: white;
+	font-family: Gotham;
+	font-weight: bold;
+	font-size: 0.6em;
+	position: absolute;
+	top: 68%;
+	left: 33%;
+	z-index: 4;
+}
+}
